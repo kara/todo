@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
+import {ToDoAppComponent} from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    ToDoAppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ToDoAppComponent]
 })
 export class AppModule { }
